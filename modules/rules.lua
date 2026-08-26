@@ -10,8 +10,11 @@ hl.window_rule({
         fullscreen = false,
         pin        = false,
     },
-
     no_focus = true,
+})
+
+hl.window_rule({
+  match = { class = "cs2" }, immediate = true
 })
 
 local suppressMaximizeRule = hl.window_rule({
