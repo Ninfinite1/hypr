@@ -3,8 +3,8 @@
 local mainMod = "SUPER" -- Sets the Super key as the mainMod key
 
 local closeWindowBind = hl.bind(mainMod .. " + C", hl.dsp.window.close())
-hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd("kitty"))
-hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
+hl.bind(mainMod .. " + return", hl.dsp.exec_cmd("kitty"))
+hl.bind(mainMod .. " + SHIFT + E", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("nautilus"))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + space", hl.dsp.exec_cmd("rofi -show drun"))
